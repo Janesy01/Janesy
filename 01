@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JANESY - Erkek Giyim</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>JANESY</h1>
+        <nav>
+            <ul>
+                <li><a href="#urunler">Ürünler</a></li>
+                <li><a href="#hakkimizda">Hakkımızda</a></li>
+                <li><a href="#iletisim">İletişim</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="slider">
+            <h2>Öne Çıkan Ürünler</h2>
+            <div class="slider-content">
+                <p>Yeni koleksiyonumuzu keşfedin!</p>
+            </div>
+        </section>
+
+        <section id="urunler">
+            <h2>Ürünler</h2>
+            <div class="urun-listesi">
+                <div class="urun">
+                    <h3>Tişört</h3>
+                    <p>Fiyat: 199 TL</p>
+                </div>
+                <div class="urun">
+                    <h3>Pantolon</h3>
+                    <p>Fiyat: 299 TL</p>
+                </div>
+                <!-- Diğer ürünler -->
+            </div>
+        </section>
+
+        <section id="hakkimizda">
+            <h2>Hakkımızda</h2>
+            <p>JANESY, modern ve şık erkek giyimini sunar.</p>
+        </section>
+
+        <section id="iletisim">
+            <h2>İletişim</h2>
+            <form>
+                <label for="name">Adınız:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">E-posta:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mesaj:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Gönder</button>
+            </form>
+        </section>
+
+        <section id="blog">
+            <h2>Blog</h2>
+            <p>Moda ipuçları ve stil önerileri için takip edin!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 JANESY. Tüm Hakları Saklıdır.</p>
+    </footer>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.urun-listesi {
+    display: flex;
+    justify-content: space-around;
+}
+
+.urun {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
